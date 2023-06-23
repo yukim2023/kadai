@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.boxblue {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+}
+.boxblue div {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+}
+
+.boxred {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  flex-wrap: wrap;
+}
+
+.boxred div {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #000;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+.navigation {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #4c4c4c;
+  font-size: 23px;
+  font-family: YuGothic;
+  padding-left: 130px;
+  padding-right: 200px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 60%;
+  font-size: 4px;
+  font-family: Hiragino Kaku Gothic ProN;
+}
+
+ul li {
+  display: flex;
+  height: 26px;
+  text-align: center;
+  color: #4c4c4c;
+  border-right: 1px solid #313131;
+  padding-left: 20px;
+  padding-right: 25px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: block;
+    width: 100%;
+  }
+}
+h1 {
+  padding-left: 10px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+ul {
+  display: block;
+}
+
+ul li {
+  height: 26px;
+  text-align: start;
+  border-right: none;
+  border-bottom: 1px solid #313131;
+  max-width: 767px;
+  padding-left: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
