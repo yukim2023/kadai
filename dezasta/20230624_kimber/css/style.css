@@ -85,10 +85,9 @@ h2 {
 body {
   background: #eeeeee;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .boxMain {
     display: block;
-    width: 100%;
   }
   img {
     max-width: 400px;
