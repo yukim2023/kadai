@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #4f260b;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif;
+}
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+  transition: 0.3s;
+}
+a:hover {
+  opacity: 0.5;
+}
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+/*ヘッダー*/
+body {
+  background-color: #e8d9bf;
+  font-feature-settings: "palt";
+}
+.header_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 7% 0 3%;
+  box-sizing: border-box;
+}
+.header_logo {
+  width: 226px;
+}
+.pc_nav ul {
+  display: flex;
+}
+.pc_nav ul li {
+  width: 105px;
+  margin-left: 55px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  text-align: center;
+}
+.lead_eng {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 107px;
+  margin-bottom: 52px;
+}
+h2 {
+  font-size: 82px;
+  font-weight: lighter;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.caption {
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 92px;
+}
+#wrap_main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#ABOUT_US img {
+  width: 500px;
+  height: 560px;
+  object-fit: cover;
+  border-bottom-right-radius: 83px;
+  width: 100%;
+}
+.flex {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.right {
+  max-width: 500px;
+  height: 560px;
+  width: 50vw;
+  padding-left: 81px;
+  vertical-align: baseline;
+  padding-top: 57px;
+}
+h3 {
+  color: #d30202;
+  font-size: 81px;
+  font-family: fliped;
+  font-weight: 400;
+  text-align: center;
+}
+.right h3 {
+  font-size: 80px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h5 {
+  font-size: 44px;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+.right p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+#MENU h3 {
+  margin-top: 96px;
+  margin-bottom: 39px;
+}
+.menu_photo img {
+  border-top-right-radius: 42px;
+  margin-bottom: 44px;
+}
+.menu_photo {
+  display: flex;
+  gap: 49px;
+}
+.drink_container,
+.food_container,
+.sweets_container {
+  position: relative;
+}
+.drink_container h4,
+.food_container h4,
+.sweets_container h4 {
+  color: #d30202;
+  font-size: 38px;
+  position: absolute;
+  bottom: 45px;
+  left: 10px;
+}
+.drink_container img,
+.food_container img,
+.sweets_container img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+.menu_photo p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+#GALLERY h3 {
+  margin-top: 88px;
+  margin-bottom: 17px;
+}
+#gallary {
+  margin-left: auto;
+  margin-right: auto;
+}
+.gallary {
+  display: flex;
+  max-width: 1960px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: calc(50% - 50vw);
+}
+.gallary img {
+  width: 26%;
+}
+#EVENT h3 {
+  margin-top: 59px;
+  margin-bottom: 30px;
+}
+.event_info {
+  border: solid 3.7px #4f260b;
+  display: flex;
+  justify-content: center;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+.event_info p {
+  font-size: 23px;
+  line-height: 1.8;
+}
+.event_news p {
+  text-decoration: underline #4f260b;
+  margin-left: 56px;
+}
+#ACCESS h3 {
+  margin-top: 68px;
+  margin-bottom: 36px;
+}
+.map {
+  background-color: white;
+  width: 100vw;
+  margin-left: calc((100% - 100vw) / 2);
+}
+footer {
+  background-color: white;
+}
+.footer_logo {
+  width: 19%;
+  padding-top: 6px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.bottom {
+  display: flex;
+  justify-content: left;
+  padding-top: 83px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.contact li {
+  font-size: 20px;
+  line-height: 1.9;
+  padding-left: 68px;
+  margin-left: 0;
+}
+footer p {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#go2top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 125px;
+}
